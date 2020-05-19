@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Nova Imagem - Clínica Estética">
+    <meta name="author" content="Thaynner Bastos">
+    <link rel="icon" type="image/png" href="/img/logotipo.png" />
+
+    <link href="/app.min.css" rel="stylesheet">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/app.js"></script>
+
+    <title>Nova Imagem - Clínica Estética</title>
+</head>
+
+<body>
+    <div id="loading">
+        <img id="logo" class="animated flip infinite slower" src="/img/loading/logotipo.png">
+    </div>
+
+    <div id="goTop-btn">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+
+    <div id="content" class="animated slower">
+
+        <section id="header">
+            <div id="infoBar" class="d-none d-lg-block">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                            <b>Whatsapp:</b> (61) 98555-6282
+                        </div>
+                        <div class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <b>Horário de funcionamento</b>: Seg-Sex: 8:00 às 18:00
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-around">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-vimeo-v"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="navBar">
+                <div id="navBarDesk" class="container d-none d-lg-block">
+                    <div id="navBarDesk-menu" class="row">
+                        <ul class="list-inline">
+                            <li class="list-inline-item active"><a class="goTo" href="slideShow">Home</a></li>
+                            <li class="list-inline-item"><a class="goTo" href="whyUs">Sobre nós</a></li>
+                           <li class="list-inline-item"><a class="goTo" href="services">Services</a></li>
+                            <li class="list-inline-item">
+                                <a class="goTo" href="index.html">
+                                    <img src="img/logotipo.png" class="img-fluid animated pulse infinite slower"
+                                        alt="Nova Imagem">
+                                </a>
+                            </li>
+                            <li class="list-inline-item"><a class="goTo" href="team">Equipe</a></li>
+                            <li class="list-inline-item"><a class="goTo" href="testimonials">Depoimentos</a></li>
+                            <li class="list-inline-item"><a class="goTo" href="contact">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="navBarMob" class="container-fluid d-lg-none">
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-bars button"
+                                onClick="animateSlideFadeIn('navBarMob-menu', 'Left'); runAnimation(this, 'flip')"></i>
+                        </div>
+                        <div class="col-8 text-center">
+                            <a class="goTo" href="index.html">
+                                <img src="img/logotipo-mob.png" class="img-fluid animated pulse infinite slower"
+                                    alt="Nova Imagem">
+                            </a>
+                        </div>
+                        <div class="col-2 text-right"><i class="fas fa-info-circle button"
+                                onClick="animateSlideFadeIn('navBarMob-infoBar', 'Right'); runAnimation(this, 'flip');"></i>
+                        </div>
+                    </div>
+                    <div id="navBarMob-menu" class="row animated d-none">
+                        <ul class="list-group text-center">
+                            <li class="list-inline-item active"><a class="goTo" href="slideShow">Home</a></li>
+                            <li class="list-inline-item"><a class="goTo" href="whyUs">Sobre nós</a></li>
+                            <li class="list-inline-item"><a class="goTo" href="services">Services</a></li>
+                            <li class="list-inline-item"><a class="goTo" href="team">Equipe</a></li>
+                            <li class="list-inline-item"><a class="goTo" href="testimonials">Depoimentos</a></li>
+                            <li class="list-inline-item"><a class="goTo" href="contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div id="navBarMob-infoBar" class="row align-items-center text-center d-none animated">
+                        <div class="col-12">
+                            <b><i class="fab fa-whatsapp"></i></b> (61) 98555-6282
+                        </div>
+                        <div class="col-12">
+                            <b><i class="far fa-clock"></i></b> Seg-Sex: 8:00 às 18:00
+                        </div>
+                        <div class="col-12">
+                            <hr />
+                        </div>
+                        <div class="col-12 d-flex justify-content-around">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-vimeo-v"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="slideShow" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slideShow" data-slide-to="0" class="active"></li>
+                <li data-target="#slideShow" data-slide-to="1"></li>
+                <li data-target="#slideShow" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/img/slides/slide-1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/slides/slide-2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/slides/slide-3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#slideShow" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slideShow" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </section>
+
+        <section id="whyUs">
+            <div class="container">
+                <div class="row">
+                    <div id="img" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 wow slideInLeft">
+                        <img src="/img/whyUs/whyUsback.png" class="animated pulse infinite">
+                        <img src="/img/whyUs/whyUsFront.png" class="img-fluid">
+                    </div>
+                    <div id="description" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 wow slideInRight">
+                        <h1 class="underscore">Porque os clientes nos escolhem?</h1>
+                        <h2>Nossa clínica visa entregar a melhor experiencia e serviço para o cliente.</h2>
+                        <p>Nós usamos os melhores produtos e equipamentos, juntamente com profissionais extremamente
+                            qualificados para evidenciar a beleza que já existem em você!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/cintura.png">
+                        <div>Drenagem Linfática</div>
+                        <div>Reduz o inchaço, toxinas e retenção de líquidos no organismo.</div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/depilacao.png">
+                        <div>Depilação</div>
+                        <div>Mantenha sua pele lisinha e sem pelos.</div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/massagem.png">
+                        <div>Massagem</div>
+                        <div>Massagens estética, relaxante ou terapeutica.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/pele.png">
+                        <div>Limpeza de Pele</div>
+                        <div>Mantenha sua pele limpa e radiante.</div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/manicure.png">
+                        <div>Manicure & Pedicure</div>
+                        <div>Restaure as suas unhas com um polimento extra</div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/sobrancelha.png">
+                        <div>Design de Sobrancelhas</div>
+                        <div>Embeleze, transforme, deixe seu rosto mais bonito e harmonioso.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/botox.png">
+                        <div>Toxina Butolínica (Botox)</div>
+                        <div>Alivie as rugas e linhas de expressão.</div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/peeling.png">
+                        <div>Peeling</div>
+                        <div>Estimule a renovação das células de sua pele.</div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow slideInUp">
+                        <img src="/img/services/glow.png">
+                        <div>BB Glow</div>
+                        <div>Deixe sua pele uniforme e livre de manchas.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="container">
+                <div class="row title slideInUp wow">
+                    <div class="col-12">
+                        <h1>Conheça Nossa Equipe</h1>
+                        <div></div>
+                        <p>Empregamos os melhores profissionais do setor. <br>Aqui estão os talentos mais importantes da
+                            nossa equipe que realizam seus sonhos.</p>
+                    </div>
+                </div>
+                <div class="row cards">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 slideInLeft wow">
+                        <div>
+                            <figure>
+                                <img src="/img/team/1.jpg">
+                            </figure>
+                            <div>
+                                <h4>Dona Zilda</h4>
+                                <p>Esteticista</p>
+                                <div></div>
+                                <div>zilda@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 slideInLeft wow">
+                        <div>
+                            <figure>
+                                <img src="/img/team/2.jpg">
+                            </figure>
+                            <div>
+                                <h4>Geovana Feiros</h4>
+                                <p>Nutricionista</p>
+                                <div></div>
+                                <div>geovana@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 slideInLeft wow">
+                        <div>
+                            <figure>
+                                <img src="/img/team/3.jpg">
+                            </figure>
+                            <div>
+                                <h4>Dr Leila</h4>
+                                <p>Biomedica</p>
+                                <div></div>
+                                <div>leila@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 slideInLeft wow">
+                        <div>
+                            <figure>
+                                <img src="/img/team/4.jpg">
+                            </figure>
+                            <div>
+                                <h4>Dr Alexander</h4>
+                                <p>Reflexologista</p>
+                                <div></div>
+                                <div>alexander@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wow animated fadeIn">
+                        <h1 id="testimonials-title">Declarações</h1>
+                        <div id="testimonials-divider"></div>
+                        <i id="testimonials-quote" class="fas fa-quote-left"></i>
+                        <div id="testimonials-slide" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p>Fiz algumas pesquisas on-line para encontrar um lugar para fazer minhas unhas e,
+                                        pouco depois, me deparei com a Nova Imagem. Desde a minha primeira visita,
+                                        sempre fiquei super satisfeita com a clinica. Sua equipe é altamente qualificada
+                                        e sabe como tratar minhas unhas da melhor maneira.</p>
+                                    <img src="/img/testimonials/c-1.jpg" class="rounded-circle">
+                                    <span>Priscila Gomes</span>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Eu tenho cuidado da minha pele desde a minha dolescência e fui a muitas clínicas
+                                        diferentes. A Nova Imagem foi de longe a melhor clinica em que eu já estive. Eu
+                                        recomendo para todos que procuram o melhor atendimento.</p>
+                                    <img src="/img/testimonials/c-2.jpg" class="rounded-circle">
+                                    <span>Geovanna Almeida</span>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>A clínica é meticulosa e destacada nos serviços que oferece. Eu sempre saio feliz
+                                        e refrescada e satisfeita depois dos serviços. Tudo e sempre muito limpo e
+                                        higiênico e sua equipe está sempre pronta para me ajudar a tomar uma decisão
+                                        sobre os meus tratamentos e cuidados.</p>
+                                    <img src="/img/testimonials/c-3.jpg" class="rounded-circle">
+                                    <span>Danielle Ferreira</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="maps" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1917.6585880578866!2d-48.05734697823459!3d-15.99699615088699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2b125eae10f7%3A0x571ef1aa936b62ca!2sCl%C3%ADnica%20de%20Est%C3%A9tica%20Nova%20Imagem!5e0!3m2!1sen!2sbr!4v1573935194981!5m2!1sen!2sbr"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div id="contact-form" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <h1 class="underscore">Fale conosco</h1>
+                        <p>Tem alguma pergunta? Sinta-se avontade para usar o formulário abaixo para entrar em contato
+                            conosco.<br>
+                            Responderemos assim que possível!
+                        </p>
+                        <form>
+                            <div class="form-group">
+                                <i class="far fa-user"></i>
+                                <input type="text" class="form-control" placeholder="Seu Nome">
+                            </div>
+                            <div class="form-group">
+                                <i class="far fa-envelope-open"></i>
+                                <input type="email" class="form-control" placeholder="Seu E-Mail">
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-phone-alt"></i>
+                                <input type="phone" class="form-control" placeholder="Telefone">
+                            </div>
+                            <div class="form-group">
+                                <i class="far fa-edit"></i>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-block">
+                                Enviar <i class="far fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div id="contact-footer" class="text-muted text-right small d-none d-md-block">
+                            Desenvolvido por Thaynner Bastos <br>
+                            <i class="fas fa-envelope"></i> th.arbastos@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer" class="d-block d-md-none small">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Desenvolvido por Thaynner Bastos
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <i class="fas fa-envelope"></i> th.arbastos@gmail.com
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
